@@ -8,13 +8,13 @@ const Home = () => {
 
   const containerStyle = {
     backgroundImage: `url(${backgroundImage})`,
-    backgroundSize: '10px',
+    backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
   };
 
   return (
-    <>
+    <div style={containerStyle}>
     {/*navbar section */}
       <nav className="navbar">
         <div className="left">
@@ -23,18 +23,17 @@ const Home = () => {
         </div>
         <div className="right">
           <ul>
-            <li><Link to= "/Home">Home</Link></li>
-            <li><Link to= "/ListOfCars">List of Cars</Link></li>
-            <li><a href="/">Locations</a></li>
-            <li><Link to= "/Contact">Contact</Link></li>
+            <li className = "navElem"><Link to= "/Home">Home</Link></li>
+            <li className = "navElem"><Link to= "/ListOfCars">List of Cars</Link></li>
+            <li className = "navElem"><Link to= "/Home">Location</Link></li>
+            <li className = "navElem"><Link to= "/Contact">Contact</Link></li>
           </ul>
         </div>
       </nav>
 
 
       {/* input section */}
-      <div className="input-section">
-        {/* <img src={backgroundImage} alt="Car" className="car-image" /> */}
+      <div className="input-section" style={{ backgroundColor: "white", padding: "20px" }}>
         <h1>Car Rental in Ottawa</h1>
         <div className="input-group">
           <input type="text" placeholder="Pickup Address" className="input-field" />
@@ -53,7 +52,7 @@ const Home = () => {
           </Link>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

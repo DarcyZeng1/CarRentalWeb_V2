@@ -36,20 +36,23 @@ const Contact = () => {
   
     return (
       <>
-        <nav className="navbar">
-          <div className="left">
-            <img src={logo} alt="Logo" className="logo" />
-            <h1 className="company-name">Car Rental</h1>
-          </div>
-          <div className="right">
-            <ul>
-              <li><Link to= "/Home">Home</Link></li>
-              <li><Link to= "/ListOfCars">List of Cars</Link></li>
-              <li><a href="#">Locations</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
+        {/*navbar section */}
+      <nav className="navbar">
+        <div className="left">
+          <img src={logo} alt="Logo" className="logo" />
+          <h1 className="company-name">Car Rental</h1>
+        </div>
+        <div className="right">
+          <ul>
+            <li className = "navElem"><Link to= "/Home">Home</Link></li>
+            <li className = "navElem"><Link to= "/ListOfCars">List of Cars</Link></li>
+            <li className = "navElem"><Link to= "/Home">Location</Link></li>
+            <li className = "navElem"><Link to= "/Contact">Contact</Link></li>
+          </ul>
+        </div>
+      </nav>
+
+
         <div className = "ContactInfo">
             
             <h1>Contact Information</h1>

@@ -1,0 +1,134 @@
+nav {
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: gray;
+}
+  
+.left {
+    display: flex;
+    align-items: center;
+}
+  
+  .right ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .right li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .right a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 50px;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 60px;
+    margin-right: 10px;
+  }
+  
+  .company-name {
+    margin: 0;
+    color: white;
+  }
+  
+/*==================*/
+
+.progress-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+  position: relative;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-grow: 1;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid gray;
+  background-color: #fff;
+  z-index: 2;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+
+  margin-left: 70px;
+}
+
+.circle.active {
+  background-color: rgb(32, 209, 32);
+  border: 2px solid rgb(27, 160, 27);
+  color: #fff;
+}
+
+.line {
+  position: absolute;
+  width: 190px;
+  top: 50%;
+  height: 2px;
+  background-color: gray;
+  z-index: 1;
+  left: -50%;
+
+  margin-left: 170px;
+}
+
+.line.active {
+  background-color: rgb(32, 209, 32);
+}
+
+.step-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -40px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.left-button, .right-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #474747;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.left-button:hover, .right-button:hover {
+  background-color: #444;
+}
+
+.left-button:hover, .right-button:hover {
+background-color: rgb(32, 209, 32);
+}
