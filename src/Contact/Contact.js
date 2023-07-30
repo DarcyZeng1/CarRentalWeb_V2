@@ -5,34 +5,6 @@ import logo from '../img/logo.png'; // Import your logo image
 import { useState } from 'react';
 
 const Contact = () => {
-
-    const Car1 = () => (
-      <div>
-        <h2>Page 1</h2>
-        <p>This is the content for Page 1.</p>
-      </div>
-    );
-  
-    const Car2 = () => (
-      <div>
-        <h2>Page 2</h2>
-        <p>This is the content for Page 2.</p>
-      </div>
-    );
-  
-    const [currentPage, setCurrentPage] = useState(null);
-  
-    const handleClickButtonNull = () => {
-      setCurrentPage(null);
-    };
-  
-    const handleClickButton1 = () => {
-      setCurrentPage(<Car1 />);
-    };
-  
-    const handleClickButton2 = () => {
-      setCurrentPage(<Car2 />);
-    };
   
     return (
       <>
@@ -45,17 +17,22 @@ const Contact = () => {
         <div className="right">
           <ul>
             <li className = "navElem"><Link to= "/Home">Home</Link></li>
-            <li className = "navElem"><Link to= "/ListOfCars">List of Cars</Link></li>
-            <li className = "navElem"><Link to= "/Home">Location</Link></li>
+            {/* <li className = "navElem"><Link to= "/ListOfCars">List of Cars</Link></li> */}
             <li className = "navElem"><Link to= "/Contact">Contact</Link></li>
+            <li className = "navElem"><Link to= "/Help">Help</Link></li>
           </ul>
         </div>
       </nav>
 
 
         <div className = "ContactInfo">
-            
-            <h1>Contact Information</h1>
+          <h1>Contact Information</h1>
+          <p>Store 1: 123 Fake Street, Anytown, Anystate</p>
+          <p>Store 2: 456 Fiction Road, Somecity, Someprovince</p>
+          <p>Store 3: 789 Imaginary Blvd, Othercity, Otherstate</p>
+          <p>Phone: (123) 456-7890</p>
+          <p>Email: info@carrental.com</p>
+          <p>Hours: Monday - Friday, 9:00 AM - 9:00 PM</p>
         </div>
   
       </>

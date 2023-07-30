@@ -1,16 +1,17 @@
 import React from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
-import logo from '../img/logo.png'; // Import your logo image
+import logo from '../img/logo.png'; 
 import backgroundImage from '../img/homeCar.jpg';
 
 const Home = () => {
 
   const containerStyle = {
     backgroundImage: `url(${backgroundImage})`,
-    backgroundSize: 'cover',
+    backgroundSize: 'auto 120%',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
+    
   };
 
   return (
@@ -24,16 +25,14 @@ const Home = () => {
         <div className="right">
           <ul>
             <li className = "navElem"><Link to= "/Home">Home</Link></li>
-            <li className = "navElem"><Link to= "/ListOfCars">List of Cars</Link></li>
-            <li className = "navElem"><Link to= "/Home">Location</Link></li>
             <li className = "navElem"><Link to= "/Contact">Contact</Link></li>
+            <li className = "navElem"><Link to= "/Help">Help</Link></li>
           </ul>
         </div>
       </nav>
 
-
       {/* input section */}
-      <div className="input-section" style={{ backgroundColor: "white", padding: "20px" }}>
+      <div className="input-section">
         <h1>Car Rental in Ottawa</h1>
         <div className="input-group">
           <input type="text" placeholder="Pickup Address" className="input-field" />

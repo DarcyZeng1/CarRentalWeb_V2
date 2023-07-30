@@ -1,4 +1,7 @@
-.ContactInfo h1{
+.ContactInfo{
+    width: 60%;
+    margin: 0 auto; /* Center the div */
     text-align: center;
-    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.6; /* Increase line spacing */
 }

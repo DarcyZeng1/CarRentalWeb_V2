@@ -110,6 +110,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin-bottom: 50px;
 }
 
 .left-button, .right-button {
@@ -131,4 +132,83 @@ nav {
 
 .left-button:hover, .right-button:hover {
 background-color: rgb(32, 209, 32);
+}
+
+.languageSwitch{
+  margin-top: 5px;
+  margin-right: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.car-image {
+  max-width: 50%;
+  height: auto;
+}
+
+.CarContainer{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.car-details {
+  border: 10px solid #9b9b9b;
+  background-color: #c0c0c0; 
+  margin: 10px; 
+  margin-right: 10px;
+  padding: 10px; 
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.car-details p {
+  margin: 0.5em 0;
+}
+
+
+.car-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 50px;
+  
+}
+
+button.default {
+  padding: 10px;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: white;
+}
+
+button:hover {
+  opacity: 0.8;
+  background-color: rgb(180, 180, 180);
+}
+
+button.selected {
+  padding: 10px;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  background-color: green;
+  color: white;
+}
+
+.more-details-button {
+  margin: 10px;
+}
+
+.price-inputs {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.price-inputs p {
+  margin-left: 10px; 
 }
